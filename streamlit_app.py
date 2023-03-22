@@ -1,25 +1,17 @@
 import openai
 import streamlit as st
 
-# set the page title and favicon
 st.set_page_config(page_title="ChatGPT API with Stream option", page_icon="🎈")
 
-# st.title("ChatGPT App with `stream=True`")
-
 api = st.secrets["api_secret"]
-
-# st.title("Stream:red[_GPT_]")
 
 col1, col2, col3 = st.columns([0.45, 0.25, 0.8])
 
 with col2:
-    # st.caption("")
-    image_arrow = st.image("chatgpt_logo.png")
+    st.image("chatgpt_logo.png")
 
 with col1:
-    # st.caption("")
     st.title("Stream:red[_GPT_]")
-    # image_arrow = st.image("images/chatgpt_logo.png")
 
 code = """
 
